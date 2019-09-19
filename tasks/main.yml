@@ -1,0 +1,5 @@
+---
+- name: Install Hardware group
+  package:
+    name: "@Hardware Support"
+  when: ansible_distribution != 'RedHat' or ansible_distribution_major_version != '7'
