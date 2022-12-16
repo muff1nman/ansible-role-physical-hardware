@@ -3,3 +3,6 @@
   package:
     name: "@Hardware Support"
   when: ansible_os_family != 'RedHat' or ansible_distribution_major_version != '7'
+- name: Install lshw
+  package:
+    name: lshw
